@@ -3,9 +3,22 @@ countries = ['Wales', 'Denmark', 'Belgium', 'Japan', 'South Korea', 'South Afric
 
 # List of countries you agreed to visit
 your_travel_list = []
+friend_travel_list = []
 
+"""
 # Testing
 for i in range(0, len(countries), 2):
     your_travel_list.append(countries[i])
+
+for i in range(1, len(countries), 2):
+    friend_travel_list.append(countries[i])
+"""
+
+for i in range(len(countries)):
+    if i % 2 == 0: # even number
+        your_travel_list.append(countries[i])
+    else:
+        friend_travel_list.append(countries[i])
     
 print(your_travel_list)
+print(friend_travel_list)
